@@ -1,0 +1,22 @@
+---
+import { twMerge } from "tailwind-merge";
+const { class: className, id } = Astro.props;
+---
+
+<div
+    class={twMerge(
+        "bg rounded-md p-5 flex flex-col gap-5 shadow-lg hover:scale-105 transition-all",
+        className,
+    )}
+    id={id}
+>
+    <slot />
+</div>
+
+<style>
+    .bg {
+        background: url("https://img.freepik.com/premium-vector/white-pattern-with-lines-that-say-word-zigzag_686000-12.jpg"),
+            theme("colors.secondary.100");
+        background-blend-mode: color-burn;
+    }
+</style>

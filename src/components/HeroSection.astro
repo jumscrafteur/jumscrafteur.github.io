@@ -1,0 +1,48 @@
+---
+import { ChevronsDown, Github, Mail } from "lucide-astro";
+import Title from "./Title.astro";
+
+import { t } from "astro-i18n";
+---
+
+<div class="flex p-5 my-10 rounded-lg gap-10 relative bg">
+    <img
+        src="/V4.png"
+        alt="portrait"
+        class="w-80 rounded-sm justify-self-center align-center"
+    />
+    <div class="flex flex-col m-auto">
+        <Title>{t("hero.name")}</Title>
+        <h2 class="leading-3 font-body">{t("hero.subTitle")}</h2>
+        <p class="mt-8 max-w-lg text-justify">{t("hero.description")}</p>
+        <div class="mt-8 flex gap-3">
+            <a
+                href="/CV"
+                class="bg-primary-800 hover:bg-primary-900 w-48 text-white p-3 rounded-sm"
+                >{t("hero.showCV")}</a
+            >
+            <a
+                href="mailto:hsansane@gmail.com"
+                class="bg-secondary-400 hover:bg-secondary-500 text-white p-3 rounded-sm"
+                ><Mail /></a
+            >
+            <a
+                href="https://github.com/jumscrafteur"
+                target="_blank"
+                class="bg-secondary-400 hover:bg-secondary-500 text-white p-3 rounded-sm"
+                ><Github /></a
+            >
+        </div>
+    </div>
+    <div class="absolute bottom-1 left-1/2 -translate-x-1/2">
+        <a href="#cursus"><ChevronsDown /></a>
+    </div>
+</div>
+
+<style>
+    .bg {
+        background: url("https://img.freepik.com/premium-vector/white-pattern-with-lines-that-say-word-zigzag_686000-12.jpg"),
+            theme("colors.secondary.100");
+        background-blend-mode: color-burn;
+    }
+</style>

@@ -1,0 +1,76 @@
+---
+import "@fontsource-variable/roboto-slab";
+import "@fontsource/roboto";
+import { astroI18n, l } from "astro-i18n";
+
+import { Languages } from "lucide-astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+const params: Record<string, string> = {};
+for (const [key, value] of Object.entries(Astro.params)) {
+	if (value === undefined) continue;
+	params[key] = String(value);
+}
+
+const hrefLangs = astroI18n.locales.map((locale) => ({
+	href:
+		Astro.url.origin +
+		astroI18n.l(Astro.url.pathname, params, {
+			targetLocale: locale,
+		}),
+	hreflang: locale,
+}));
+
+let links = astroI18n.locales.map((locale) => ({
+	locale,
+	href: l(Astro.url.pathname, params, {
+		targetLocale: locale,
+	}),
+}));
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		{
+			hrefLangs.map(({ href, hreflang }) => (
+				<link rel="alternate" href={href} hreflang={hreflang} />
+			))
+		}
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-background-50">
+		<ul
+			class="absolute z-10 top-4 left-4 p-4 rounded bg-secondary-100 flex flex-col items-center gap-4 group w-16 h-14 hover:h-32 transition-all overflow-hidden"
+		>
+			<li class=""><Languages /></li>
+			{
+				links.map(({ href, locale }) => (
+					<li class="">
+						<a href={href}>
+							<img
+								src={`./flags/${locale}.png`}
+								alt=""
+								class="w-full rounded-sm"
+							/>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+
+		<div class="max-w-4xl m-auto">
+			<slot />
+		</div>
+	</body>
+</html>

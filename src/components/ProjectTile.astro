@@ -1,0 +1,38 @@
+---
+import Card from "../components/Card.astro";
+
+interface Props {
+    title: string;
+    link?: string;
+    badges: {
+        alt: string;
+        src: string;
+    }[];
+    desc: string;
+}
+
+const { title, link, badges, desc } = Astro.props;
+---
+
+<Card class="gap-0">
+    <h1 class="text-lg font-heading font-bold">
+        {title}
+        {
+            link ? (
+                <a class="pl-2" href={link}>
+                    🔗
+                </a>
+            ) : (
+                ""
+            )
+        }
+    </h1>
+    <div class="flex gap-2">
+        {
+            badges.map(({ alt, src }) => (
+                <img alt={alt} src={src} class="rounded-sm" />
+            ))
+        }
+    </div>
+    <p class="mt-5 text-justify">{desc}</p>
+</Card>

@@ -1,0 +1,59 @@
+{
+	"hero" : {
+		"name" : "Hugo Sansané",
+		"subTitle" : "Aspirant Ingénieur Logiciel",
+		"description" : "Étudiant à l'INSA CVL, passionné par la programmation.Je suis une personne proactive qui aime faire avancer les choses.De plus, étant curieux et polyvalent, j'ai un fort désir de partager mes connaissances et d'apprendre des autres.",
+		"showCV" : "Voir mon CV"
+	},
+	"curriculum": {
+		"name" : "Mon Cursus",
+		"description" : "Durant l'intégralité de ma formation, mes stratégies d'apprentissage ont été sur deux bases fortes. Une phase d'apprentissage scolaire traditionnel apportant de la rigueur et permettant d'aborder des sujets que je n'aurais pas abordé autrement suivis d'une phase d'apprentissage personnel permettant d'approfondir les sujets vu en classe, les voir sous un autre point de vu ou encore étendre mes connaissances a des champs qui ne sont pas abordé dans un cadre scolaire",
+		"erasmus" : "Études à l'étranger",
+		"sti" : "Sécurité Informatique et Technologies",
+		"tsi": "CPGE Technologie et sciences industrielles",
+		"sti2d" : "BAC Sciences et technologies de l'industrie (STI2D)"
+	},
+	"experiences" : {
+		"name" : "Expériences Extrascolaire",
+		"r3" : {
+			"title" : "Trésorier Association R³",
+			"description" : "Promouvoir l'accès à la connaissance en s'adressant aux jeunes"
+		},
+		"isi" : {
+			"title" : "Membre Club ISI",
+			"description" : "Apprendre et Comprendre la sécurité informatique de manière pratique en faisant des CTF"
+		},
+		"codinsa" : {
+			"title" : "Finaliste Codinsa 2023",
+			"description" : "Concours d'informatique annuel créé par et pour les élèves des INSA de France"
+		}
+	},
+	"projects" : {
+		"name" : "Mes Projets",
+		"bloomingSprout" : {
+			"name" : "Blooming Sprout",
+			"description" : "Utiliser divers algorithmes pour générer une image d'une île en fonction des réactions d'une communauté."
+		},
+		"eulerProject" : {
+			"name" : "Euler Project",
+			"description" : "Ensemble de défis mathématiques et informatiques."
+		},
+		"drizzly" : {
+			"name" : "Drizzly",
+			"description" : "Application TUI qui permet de mixer et appliquer des filtres à plusieurs pistes audio youtube."
+		},
+		"oRandom" : {
+			"name" : "O-Random",
+			"description" : "Générateur de recettes aléatoires O'tacos. L'objectif est de réaliser la même application de différentes manières avec différentes technologies."
+		},
+		"katshing" : {
+			"name" : "Katshing",
+			"description" : "Application Web qui vous permet de convertir différentes devises en utilisant l'API de devises fixer"
+		},
+		"thisWebsite" : {
+			"name" : "Ce site web !",
+			"description" : "Ce site est généré de manière statique à l'aide d'Astro et est hébergé sur Github Pages."
+		}
+	},
+	"now": "Maintenant"
+}
