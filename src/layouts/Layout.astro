@@ -5,6 +5,11 @@ import { astroI18n, l } from "astro-i18n";
 
 import { Languages } from "lucide-astro";
 
+import { Image } from "astro:assets";
+
+import ENFlag from "../images/flags/en.png";
+import FRFlag from "../images/flags/fr.png";
+
 interface Props {
 	title: string;
 }
@@ -32,6 +37,11 @@ let links = astroI18n.locales.map((locale) => ({
 		targetLocale: locale,
 	}),
 }));
+
+const FLAGS = {
+	fr: FRFlag,
+	en: ENFlag,
+};
 ---
 
 <!doctype html>
@@ -58,8 +68,8 @@ let links = astroI18n.locales.map((locale) => ({
 				links.map(({ href, locale }) => (
 					<li class="">
 						<a href={href}>
-							<img
-								src={`./flags/${locale}.png`}
+							<Image
+								src={FLAGS[locale]}
 								alt=""
 								class="w-full rounded-sm"
 							/>

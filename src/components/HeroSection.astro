@@ -1,13 +1,16 @@
 ---
+import { Image } from "astro:assets";
 import { ChevronsDown, Github, Mail } from "lucide-astro";
 import Title from "./Title.astro";
+
+import V4 from "../images/V4.png";
 
 import { t } from "astro-i18n";
 ---
 
 <div class="flex p-5 my-10 rounded-lg gap-10 relative bg">
-    <img
-        src="/V4.png"
+    <Image
+        src={V4}
         alt="portrait"
         class="w-80 rounded-sm justify-self-center align-center"
     />

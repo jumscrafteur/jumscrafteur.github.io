@@ -1,10 +1,15 @@
 ---
+import { Image } from "astro:assets";
 import Card from "../components/Card.astro";
 import HeroSection from "../components/HeroSection.astro";
 import ProjectTile from "../components/ProjectTile.astro";
 import Timeline from "../components/Timeline.astro";
 import Title from "../components/Title.astro";
 import Layout from "../layouts/Layout.astro";
+
+import CodInsaLogo from "../images/codinsalogo.jpg";
+import ISILogo from "../images/isilogo.png";
+import R3Logo from "../images/r3logo.jpg";
 
 import { t } from "astro-i18n";
 
@@ -118,8 +123,8 @@ let projects: {
             <p class="text-lg text-center font-heading font-bold">
                 {t("experiences.r3.title")}
             </p>
-            <img
-                src="./r3logo.jpg"
+            <Image
+                src={R3Logo}
                 alt="r3 logo"
                 class="w-32 aspect-square rounded"
             />
@@ -129,8 +134,8 @@ let projects: {
             <p class="text-lg text-center font-heading font-bold">
                 {t("experiences.isi.title")}
             </p>
-            <img
-                src="./isilogo.png"
+            <Image
+                src={ISILogo}
                 alt="isi logo"
                 class="w-32 aspect-square rounded"
             />
@@ -140,8 +145,8 @@ let projects: {
             <p class="text-lg text-center font-heading font-bold">
                 {t("experiences.codinsa.title")}
             </p>
-            <img
-                src="./codinsalogo.jpg"
+            <Image
+                src={CodInsaLogo}
                 alt="codinsa logo"
                 class="w-32 aspect-square rounded"
             />
