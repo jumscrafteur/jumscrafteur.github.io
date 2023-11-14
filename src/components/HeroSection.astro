@@ -8,7 +8,9 @@ import V4 from "../images/V4.png";
 import { astroI18n, t } from "astro-i18n";
 ---
 
-<div class="flex p-5 my-10 rounded-lg gap-10 relative bg">
+<div
+    class="flex p-5 pb-10 my-10 rounded-lg gap-10 relative bg flex-col md:flex-row items-center"
+>
     <Image
         src={V4}
         alt="portrait"
@@ -17,7 +19,7 @@ import { astroI18n, t } from "astro-i18n";
     <div class="flex flex-col m-auto">
         <Title>{t("hero.name")}</Title>
         <h2 class="leading-3 font-body">{t("hero.subTitle")}</h2>
-        <p class="mt-8 max-w-lg text-justify">{t("hero.description")}</p>
+        <p class="mt-8 w-full min-w-0 text-justify">{t("hero.description")}</p>
         <div class="mt-8 flex gap-3">
             <a
                 href={`/CVs/${astroI18n.locale}.pdf`}
