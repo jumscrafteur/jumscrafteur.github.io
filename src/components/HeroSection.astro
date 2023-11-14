@@ -5,7 +5,7 @@ import Title from "./Title.astro";
 
 import V4 from "../images/V4.png";
 
-import { t } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
 ---
 
 <div class="flex p-5 my-10 rounded-lg gap-10 relative bg">
@@ -20,7 +20,7 @@ import { t } from "astro-i18n";
         <p class="mt-8 max-w-lg text-justify">{t("hero.description")}</p>
         <div class="mt-8 flex gap-3">
             <a
-                href="/CV"
+                href={`/CVs/${astroI18n.locale}.pdf`}
                 class="bg-primary-800 hover:bg-primary-900 w-48 text-white p-3 rounded-sm"
                 >{t("hero.showCV")}</a
             >
