@@ -1,59 +1,63 @@
 {
-	"hero" : {
-		"name" : "Hugo Sansané",
-		"subTitle" : "Aspiring Software Engineer",
-		"description" : "Student at INSA CVL, passionate about programming. I am a proactive person who likes to make things happen. Additionally, Being curious and multifaceted, I have a strong desire to share my knowledge and learn from others",
-		"showCV" : "View my CV"
-	},
-	"curriculum": {
-		"name" : "My Curriculum",
-		"description" : "Throughout my training, my learning strategies have been based on two strong foundations. A formal learning phase that provided a rigorous approach and enabled me to tackle subjects that I wouldn't have tackled otherwise, followed by a personal learning phase that enabled me to delve deeper into the subjects covered in class, to look at them from a different perspective or to extend my knowledge to fields that aren't covered in a formal setting.",
-		"erasmus" : "Foreign studies",
-		"sti" : "Computer Security and Technologies",
-		"tsi": "Preparatory Class for Technology and Industrial Sciences (TSI)",
-		"sti2d" : "Science and technology for industry and sustainable development (STI2D)"
-	},
-	"experiences" : {
-		"name" : "Experiences",
-		"r3" : {
-			"title" : "Treasurer at R³ Association",
-			"description" : "Promote access to knowledge by reaching out to young people "
-		},
-		"isi" : {
-			"title" : "ISI Club Member",
-			"description" : "Learn and understand IT security in a practical way by doing CTFs"
-		},
-		"codinsa" : {
-			"title" : "Codinsa 2023 finalist",
-			"description" : "Annual computer science competition created by and for students at France's INSAs"
-		}
-	},
-	"projects" : {
-		"name" : "My Projects",
-		"bloomingSprout" : {
-			"name" : "Blooming Sprout",
-			"description" : "Use various algorithms to generate an image of an island depending of the feedback of a community."
-		},
-		"eulerProject" : {
-			"name" : "Euler Project",
-			"description" : "Set of math and computer science challenges"
-		},
-		"drizzly" : {
-			"name" : "Drizzly",
-			"description" : "TUI App that allow you to mix and apply filters to multiple youtube audio tracks"
-		},
-		"oRandom" : {
-			"name" : "O-Random",
-			"description" : "French O'tacos random recipe generator. The goal here is to make the same app in various ways with various tech stacks."
-		},
-		"katshing" : {
-			"name" : "Katshing",
-			"description" : "Web App that let you convert different currencies using fixer currency API"
-		},
-		"thisWebsite" : {
-			"name" : "This website !",
-			"description" : "This website is statically generated using Astro and hosted on Github pages"
-		}
-	},
-	"now": "Now"
+  "hero": {
+    "name": "Hugo Sansané",
+    "subTitle": "Aspiring Software Engineer",
+    "description": "Student at INSA CVL, passionate about programming. I am a proactive person who likes to make things happen. Additionally, Being curious and multifaceted, I have a strong desire to share my knowledge and learn from others",
+    "showCV": "View my CV"
+  },
+  "curriculum": {
+    "name": "My Curriculum",
+    "description": "Throughout my training, my learning strategies have been based on two strong foundations. A formal learning phase that provided a rigorous approach and enabled me to tackle subjects that I wouldn't have tackled otherwise, followed by a personal learning phase that enabled me to delve deeper into the subjects covered in class, to look at them from a different perspective or to extend my knowledge to fields that aren't covered in a formal setting.",
+    "erasmus": "Foreign studies",
+    "sti": "Computer Security and Technologies",
+    "tsi": "Preparatory Class for Technology and Industrial Sciences (TSI)",
+    "sti2d": "Science and technology for industry and sustainable development (STI2D)"
+  },
+  "experiences": {
+    "name": "Experiences",
+    "r3": {
+      "title": "Treasurer at R³ Association",
+      "description": "Promote access to knowledge by reaching out to young people "
+    },
+    "isi": {
+      "title": "ISI Club Member",
+      "description": "Learn and understand IT security in a practical way by doing CTFs"
+    },
+    "codinsa": {
+      "title": "Codinsa 2023 finalist",
+      "description": "Annual computer science competition created by and for students at France's INSAs"
+    }
+  },
+  "projects": {
+    "name": "My Projects",
+    "bloomingSprout": {
+      "name": "Blooming Sprout",
+      "description": "Use various algorithms to generate an image of an island depending of the feedback of a community."
+    },
+    "eulerProject": {
+      "name": "Euler Project",
+      "description": "Set of math and computer science challenges"
+    },
+    "drizzly": {
+      "name": "Drizzly",
+      "description": "TUI App that allow you to mix and apply filters to multiple youtube audio tracks"
+    },
+    "oRandom": {
+      "name": "O-Random",
+      "description": "French O'tacos random recipe generator. The goal here is to make the same app in various ways with various tech stacks."
+    },
+    "katshing": {
+      "name": "Katshing",
+      "description": "Web App that let you convert different currencies using fixer currency API"
+    },
+    "thisWebsite": {
+      "name": "This website !",
+      "description": "This website is statically generated using Astro and hosted on Github pages"
+    }
+  },
+  "now": "Now",
+  "mainLayout": {
+    "title": "Hugo Sansané's personal website",
+    "description": "This is a site where you will be able to learn more about me and my projects."
+  }
 }

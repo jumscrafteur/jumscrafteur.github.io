@@ -1,8 +1,9 @@
 ---
 import "@fontsource-variable/roboto-slab";
 import "@fontsource/roboto";
-import { astroI18n, l } from "astro-i18n";
+import { astroI18n, l, t } from "astro-i18n";
 
+import { SEO } from "astro-seo";
 import { Languages } from "lucide-astro";
 
 import { Image } from "astro:assets";
@@ -28,7 +29,7 @@ const hrefLangs = astroI18n.locales.map((locale) => ({
 		astroI18n.l(Astro.url.pathname, params, {
 			targetLocale: locale,
 		}),
-	hreflang: locale,
+	hrefLang: locale,
 }));
 
 let links = astroI18n.locales.map((locale) => ({
@@ -45,19 +46,38 @@ const FLAGS = {
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang={astroI18n.locale} class="scroll-smooth">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
+		<SEO
+			title={title}
+			description={t("mainLayout.description")}
+			charset="UTF-8"
+			languageAlternates={hrefLangs}
+			openGraph={{
+				basic: {
+					title: t("mainLayout.title"),
+					image: Astro.url.origin + "/banner.png",
+					type: "profile",
+				},
+				optional: {
+					description: t("mainLayout.description"),
+					locale: astroI18n.locale,
+					localeAlternate: astroI18n.locales.filter(
+						(locale) => locale != astroI18n.locale,
+					),
+				},
+			}}
+			twitter={{
+				card: "summary_large_image",
+				image: Astro.url.origin + "/banner_twitter.png",
+				imageAlt: "Hugo Sansané's website banner",
+				title: t("mainLayout.title"),
+				description: t("mainLayout.description"),
+			}}
+		/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		{
-			hrefLangs.map(({ href, hreflang }) => (
-				<link rel="alternate" href={href} hreflang={hreflang} />
-			))
-		}
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
 	</head>
 	<body class="bg-background-50">
 		<ul
