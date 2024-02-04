@@ -17,42 +17,42 @@
     "name": "Experiences",
     "r3": {
       "title": "Treasurer at R³ Association",
-      "description": "Promote access to knowledge by reaching out to young people "
+      "description": "Promote access to knowledge by tutoring students with learning difficulties or doing conferences showing what being an engineering student is like."
     },
     "isi": {
       "title": "ISI Club Member",
-      "description": "Learn and understand IT security in a practical way by doing CTFs"
+      "description": "Learn Cybersecurity by doing red teams / blue teams CTFs"
     },
     "codinsa": {
       "title": "Codinsa 2023 finalist",
-      "description": "Annual computer science competition created by and for students at France's INSAs"
+      "description": "Annual computer science competition inter INSA, constituted of two phases, in the first one students need to solve Coding Challenges of increasing difficulty and score points. In the second phase, the final, every student with the maximum amount of points in each INSA meet and make a team that will have to code in 24 hours an AI which compete against other AIs "
     }
   },
   "projects": {
     "name": "My Projects",
     "bloomingSprout": {
       "name": "Blooming Sprout",
-      "description": "Use various algorithms to generate an image of an island depending of the feedback of a community."
+      "description": "Creation of a Socially Driven Game where the visual of an island is generated procedurally using algorithms like Lazy Flood Fill or cellular automaton implemented in python.\n\nThe Goal here is to learn about procedural generation and image processing.\n\nThe Creation of the project also come with a blog, statically generated using Astro in order to create update for the community"
     },
     "eulerProject": {
       "name": "Euler Project",
-      "description": "Set of math and computer science challenges"
+      "description": "Resolution of the first 35 problems from Project Euler, a series of challenging mathematical/computer programming problems using python. The problems can go from counting the number of circular primes that are below one million or finding the index of the first term in the Fibonacci sequence to contain 1000 digits."
     },
     "drizzly": {
       "name": "Drizzly",
-      "description": "TUI App that allow you to mix and apply filters to multiple youtube audio tracks"
+      "description": "A Terminal User Interface App coded in C++ that uses TermOx for the UI and integrates LibAV for audio processing functionalities in order to allow the user to mix, repeat and add filters to different sounds tracks from YouTube. "
     },
     "oRandom": {
       "name": "O-Random",
-      "description": "French O'tacos random recipe generator. The goal here is to make the same app in various ways with various tech stacks."
+      "description": "Implementation of different Front-End and Back-End for a French O-Tacos random order generator. The Goal here is to have a simple project that allows me to discover and compare new frameworks by re-creating the same layout every single time.\n\nThe currently implemented solutions include : a shared backend in Node.js, a front-end using vanilla JavaScript, TypeScript, Svelte, PHP and HTMX"
     },
     "katshing": {
       "name": "Katshing",
-      "description": "Web App that let you convert different currencies using fixer currency API"
+      "description": "Web App that lets you convert different currencies using the fixer currency API. This Application using the SvelteKit JavaScript framework and Progressive web app technologies in order to allow the user to use the last saved change rates and preferences without the need for an Internet connection\n\nThe deployment of this application is handled with Vercel, a platform that allow to simply deploy a project by linking it to a git repo"
     },
     "thisWebsite": {
       "name": "This website !",
-      "description": "This website is statically generated using Astro and hosted on Github pages"
+      "description": "This website is statically generated with internationalization using Astro and hosted on Github pages"
     }
   },
   "now": "Now",

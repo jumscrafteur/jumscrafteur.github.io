@@ -1,31 +1,31 @@
 {
-	"name": "",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro check && astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"i18n:extract": "astro-i18n extract",
-		"i18n:generate:pages": "astro-i18n generate:pages --purge",
-		"i18n:generate:types": "astro-i18n generate:types",
-		"i18n:sync": "npm run i18n:generate:pages && npm run i18n:generate:types"
-	},
-	"dependencies": {
-		"@astrojs/check": "^0.3.1",
-		"@astrojs/tailwind": "^5.0.2",
-		"@fontsource-variable/roboto-slab": "^5.0.17",
-		"@fontsource/roboto": "^5.0.8",
-		"astro": "^3.5.2",
-		"astro-i18n": "^2.1.18",
-		"astro-seo": "^0.8.0",
-		"esbuild": "^0.19.5",
-		"lucide-astro": "^0.292.0",
-		"sharp": "^0.32.6",
-		"tailwind-merge": "^2.0.0",
-		"tailwindcss": "^3.0.24",
-		"typescript": "^5.2.2"
-	}
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "i18n:extract": "astro-i18n extract",
+    "i18n:generate:pages": "astro-i18n generate:pages --purge",
+    "i18n:generate:types": "astro-i18n generate:types",
+    "i18n:sync": "pnpm run i18n:generate:pages && pnpm run i18n:generate:types"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/tailwind": "^5.0.2",
+    "@fontsource-variable/roboto-slab": "^5.0.17",
+    "@fontsource/roboto": "^5.0.8",
+    "astro": "^3.5.2",
+    "astro-i18n": "^2.1.18",
+    "astro-seo": "^0.8.0",
+    "esbuild": "^0.19.5",
+    "lucide-astro": "^0.292.0",
+    "sharp": "^0.32.6",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^5.2.2"
+  }
 }
