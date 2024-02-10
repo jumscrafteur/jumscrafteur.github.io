@@ -7,7 +7,7 @@
   },
   "curriculum": {
     "name": "Mon Cursus",
-    "description": "Durant l'intégralité de ma formation, mes stratégies d'apprentissage ont été sur deux bases fortes. Une phase d'apprentissage scolaire traditionnel apportant de la rigueur et permettant d'aborder des sujets que je n'aurais pas abordé autrement suivis d'une phase d'apprentissage personnel permettant d'approfondir les sujets vu en classe, les voir sous un autre point de vu ou encore étendre mes connaissances a des champs qui ne sont pas abordé dans un cadre scolaire",
+    "description": "Durant l'intégralité de ma formation, mes stratégies d'apprentissage ont été sur deux bases fortes. Une phase d'apprentissage scolaire traditionnel apportant de la rigueur et permettant d'aborder des sujets que je n'aurais pas abordé autrement suivis d'une phase d'apprentissage personnel permettant d'approfondir les sujets vu en classe, les voir sous un autre point de vu ou encore étendre mes connaissances a des champs qui ne sont pas abordé dans un cadre scolaire.\n\nCette méthodologie m'a permis de développer des compétences sur des technologies modernes qui m'intéressent pour mon avenir professionnel, notamment des dans les domaines du génie logiciel et du web, tout en structurant mes pratiques de développement.",
     "erasmus": "Études à l'étranger",
     "sti": "Sécurité Informatique et Technologies",
     "tsi": "CPGE Technologie et sciences industrielles",
@@ -17,38 +17,39 @@
     "name": "Expériences Extrascolaire",
     "r3": {
       "title": "Trésorier Association R³",
-      "description": "Promouvoir l'accès à la connaissance en s'adressant aux jeunes"
+      "description": "Promouvoir l'accès au savoir en donnant des cours particuliers à des étudiants ayant des difficultés d'apprentissage ou en organisant des conférences montrant ce qu'est la vie des étudiants en école d'ingénieurs."
     },
     "isi": {
       "title": "Membre Club ISI",
-      "description": "Apprendre et Comprendre la sécurité informatique de manière pratique en faisant des CTF"
+      "description": "Apprendre et Comprendre la sécurité informatique de manière pratique en faisant des CTF blue team/red team"
     },
     "codinsa": {
       "title": "Finaliste Codinsa 2023",
-      "description": "Concours d'informatique annuel créé par et pour les élèves des INSA de France"
+      "description": "Concours d'informatique inter INSA annuel, constitué de deux phases, dans la première les étudiants doivent résoudre des défis de programmation de difficulté croissante et marquer des points. Dans la seconde phase, la finale, les participants ayant obtenu le maximum de points dans chaque INSA se rencontrent et forment une équipe qui devra coder en 24 heures une IA qui se mesurera à d'autres IA."
     }
   },
   "projects": {
     "name": "Mes Projets",
+    "warning": "Tous ces projets sont réalisés par moi-même.",
     "bloomingSprout": {
       "name": "Blooming Sprout",
-      "description": "Utiliser divers algorithmes pour générer une image d'une île en fonction des réactions d'une communauté."
+      "description": "Création d'un jeu social où le visuel d'une île est généré de manière procédurale en utilisant des algorithmes comme Lazy Flood Fill ou l'automate cellulaire implémenté en python.\n\nL'objectif ici est d'apprendre la génération procédurale et le traitement d'image.\n\nLa création du projet s'accompagne également d'un blog, généré statiquement à l'aide d'Astro afin de créer des mises à jour pour la communauté.\n\nIci, vous pourrez lire un article que j'ai écrit qui explique plus profondément le projet [🔗](/Blooming%20Sprout%20a%20Socially%20Driven%20Game.pdf)."
     },
     "eulerProject": {
       "name": "Euler Project",
-      "description": "Ensemble de défis mathématiques et informatiques."
+      "description": "Résolution des 35 premiers problèmes du [projet Euler](https://projecteuler.net/), une série de problèmes de programmation mathématique/informatique en utilisant Python. Les problèmes peuvent aller du décompte du nombre de nombres premiers circulaires inférieurs à un million à la recherche de l'indice du premier terme de la séquence de Fibonacci contenant 1000 chiffres."
     },
     "drizzly": {
       "name": "Drizzly",
-      "description": "Application TUI qui permet de mixer et appliquer des filtres à plusieurs pistes audio youtube."
+      "description": "Une application d'interface utilisateur codée en C++ qui utilise [TermOx](https://github.com/a-n-t-h-o-n-y/TermOx) pour l'interface utilisateur et intègre [FFmpeg](https://fr.wikipedia.org/wiki/FFmpeg) pour les fonctionnalités de traitement audio afin de permettre à l'utilisateur de mélanger, répéter et ajouter des filtres à différentes pistes sonores provenant de YouTube."
     },
     "oRandom": {
       "name": "O-Random",
-      "description": "Générateur de recettes aléatoires O'tacos. L'objectif est de réaliser la même application de différentes manières avec différentes technologies."
+      "description": "[Implémentation de différents Front-End et Back-End](https://github.com/jumscrafteur/o-random) pour un générateur d'ordre aléatoire O-Tacos. Le but ici est d'avoir un projet simple qui me permette de découvrir et de comparer de nouveaux frameworks en recréant le même layout à chaque fois.\n\nLes solutions actuellement mises en œuvre comprennent : un back-end partagé en Node.js, un front-end utilisant vanilla JavaScript, TypeScript, Svelte, PHP et HTMX."
     },
     "katshing": {
       "name": "Katshing",
-      "description": "Application Web qui vous permet de convertir différentes devises en utilisant l'API de devises fixer"
+      "description": "[Application Web](https://katshing.vercel.app/) qui permet de convertir différentes devises en utilisant l'API du Fixer.\n\nCette application utilise le framework JavaScript [SvelteKit](https://kit.svelte.dev/) et les technologies Progressive web app afin de permettre à l'utilisateur d'utiliser les derniers taux de change enregistrés et les préférences sans avoir besoin d'une connexion Internet.\n\nLe déploiement de cette application est géré avec [Vercel](https://vercel.com), une plateforme qui permet de déployer simplement un projet en le liant à un repo git."
     },
     "thisWebsite": {
       "name": "Ce site web !",

@@ -1,5 +1,6 @@
 ---
 import { t } from "astro-i18n";
+import { marked } from "marked";
 
 export interface Props {
     timelineElements: {
@@ -13,9 +14,13 @@ const { timelineElements } = Astro.props;
 ---
 
 <div class="grid grid-cols-1 py-4 gap-5 md:grid-cols-2">
-    <p class="text-justify">
+    <div
+        class="text-justify"
+        set:html={marked.parse(t("curriculum.description"))}
+    />
+    <!-- <p class="text-justify">
         {t("curriculum.description")}
-    </p>
+    </p> -->
     <div class="grid grid-cols-[5px,1fr] grid-rows-4 gap-2 gap-y-4">
         <div class="bg-primary-800 row-span-full col-start-1 rounded"></div>
         {

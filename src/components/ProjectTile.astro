@@ -1,4 +1,5 @@
 ---
+import { marked } from "marked";
 import Card from "../components/Card.astro";
 
 interface Props {
@@ -34,5 +35,16 @@ const { title, link, badges, desc } = Astro.props;
             ))
         }
     </div>
-    <p class="mt-5 text-justify whitespace-pre-line leading-6">{desc}</p>
+
+    <div
+        class="mt-5 text-justify flex gap-4 flex-col md"
+        set:html={marked.parse(desc)}
+    />
 </Card>
+
+<style is:global>
+    .md a {
+        color: theme("colors.primary.800");
+        text-decoration: underline;
+    }
+</style>

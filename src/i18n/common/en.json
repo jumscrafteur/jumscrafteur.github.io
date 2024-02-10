@@ -7,7 +7,7 @@
   },
   "curriculum": {
     "name": "My Curriculum",
-    "description": "Throughout my training, my learning strategies have been based on two strong foundations. A formal learning phase that provided a rigorous approach and enabled me to tackle subjects that I wouldn't have tackled otherwise, followed by a personal learning phase that enabled me to delve deeper into the subjects covered in class, to look at them from a different perspective or to extend my knowledge to fields that aren't covered in a formal setting.",
+    "description": "Throughout my training, my learning strategies have been based on two strong foundations. A formal learning phase that provided a rigorous approach and enabled me to tackle subjects that I wouldn't have tackled otherwise, followed by a personal learning phase that enabled me to delve deeper into the subjects covered in class, to look at them from a different perspective or to extend my knowledge to fields that aren't covered in a formal setting.\n\nThis methodology has enabled me to develop skills in modern technologies that are of interest to me for my future career, particularly in the fields of software engineering and the web, while at the same time structuring my development practices.",
     "erasmus": "Foreign studies",
     "sti": "Computer Security and Technologies",
     "tsi": "Preparatory Class for Technology and Industrial Sciences (TSI)",
@@ -25,30 +25,31 @@
     },
     "codinsa": {
       "title": "Codinsa 2023 finalist",
-      "description": "Annual computer science competition inter INSA, constituted of two phases, in the first one students need to solve Coding Challenges of increasing difficulty and score points. In the second phase, the final, every student with the maximum amount of points in each INSA meet and make a team that will have to code in 24 hours an AI which compete against other AIs "
+      "description": "Annual computer science competition inter INSA, constituted of two phases, in the first one students need to solve Coding Challenges of increasing difficulty and score points. In the second phase, the final, every student with the maximum amount of points in each INSA meet and make a team that will have to code in 24 hours an AI which compete against other AIs."
     }
   },
   "projects": {
     "name": "My Projects",
+    "warning": "All these projects are carried out by myself.",
     "bloomingSprout": {
       "name": "Blooming Sprout",
-      "description": "Creation of a Socially Driven Game where the visual of an island is generated procedurally using algorithms like Lazy Flood Fill or cellular automaton implemented in python.\n\nThe Goal here is to learn about procedural generation and image processing.\n\nThe Creation of the project also come with a blog, statically generated using Astro in order to create update for the community"
+      "description": "Creation of a Socially Driven Game where the visual of an island is generated procedurally using algorithms like Lazy Flood Fill or cellular automaton implemented in python.\n\nThe Goal here is to learn about procedural generation and image processing.\n\nThe Creation of the project also come with a blog, statically generated using Astro in order to create update for the community.\n\n Here you will be able to read a paper I've written which explain more deeply the project [🔗](/Blooming%20Sprout%20a%20Socially%20Driven%20Game.pdf)."
     },
     "eulerProject": {
       "name": "Euler Project",
-      "description": "Resolution of the first 35 problems from Project Euler, a series of challenging mathematical/computer programming problems using python. The problems can go from counting the number of circular primes that are below one million or finding the index of the first term in the Fibonacci sequence to contain 1000 digits."
+      "description": "Resolution of the first 35 problems from [Project Euler](https://projecteuler.net/), a series of challenging mathematical/computer programming problems using python. The problems can go from counting the number of circular primes that are below one million or finding the index of the first term in the Fibonacci sequence to contain 1000 digits."
     },
     "drizzly": {
       "name": "Drizzly",
-      "description": "A Terminal User Interface App coded in C++ that uses TermOx for the UI and integrates LibAV for audio processing functionalities in order to allow the user to mix, repeat and add filters to different sounds tracks from YouTube. "
+      "description": "A Terminal User Interface App coded in C++ that uses [TermOx](https://github.com/a-n-t-h-o-n-y/TermOx) for the UI and integrates [FFmpeg](https://fr.wikipedia.org/wiki/FFmpeg) for audio processing functionalities in order to allow the user to mix, repeat and add filters to different sounds tracks from YouTube."
     },
     "oRandom": {
       "name": "O-Random",
-      "description": "Implementation of different Front-End and Back-End for a French O-Tacos random order generator. The Goal here is to have a simple project that allows me to discover and compare new frameworks by re-creating the same layout every single time.\n\nThe currently implemented solutions include : a shared backend in Node.js, a front-end using vanilla JavaScript, TypeScript, Svelte, PHP and HTMX"
+      "description": "[Implementation of different Front-End and Back-End](https://github.com/jumscrafteur/o-random) for a French O-Tacos random order generator. The Goal here is to have a simple project that allows me to discover and compare new frameworks by re-creating the same layout every single time.\n\nThe currently implemented solutions include : a shared backend in Node.js, a front-end using vanilla JavaScript, TypeScript, Svelte, PHP and HTMX"
     },
     "katshing": {
       "name": "Katshing",
-      "description": "Web App that lets you convert different currencies using the fixer currency API. This Application using the SvelteKit JavaScript framework and Progressive web app technologies in order to allow the user to use the last saved change rates and preferences without the need for an Internet connection\n\nThe deployment of this application is handled with Vercel, a platform that allow to simply deploy a project by linking it to a git repo"
+      "description": "[Web App](https://katshing.vercel.app/) that lets you convert different currencies using the fixer currency API.\n\nThis Application using the [SvelteKit](https://kit.svelte.dev/) JavaScript framework and Progressive web app technologies in order to allow the user to use the last saved change rates and preferences without the need for an Internet connection\n\nThe deployment of this application is handled with [Vercel](https://vercel.com), a platform that allow to simply deploy a project by linking it to a git repo."
     },
     "thisWebsite": {
       "name": "This website !",

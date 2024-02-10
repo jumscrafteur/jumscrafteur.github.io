@@ -23,6 +23,7 @@
     "astro-seo": "^0.8.0",
     "esbuild": "^0.19.5",
     "lucide-astro": "^0.292.0",
+    "marked": "^12.0.0",
     "sharp": "^0.32.6",
     "tailwind-merge": "^2.0.0",
     "tailwindcss": "^3.0.24",
